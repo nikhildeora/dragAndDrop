@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Drag and drop -  javascript</title>
 </head>
 <body>
+
+    <nav>
+        <ul type="none">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="video.html">Demo Video</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="mainHeading">Drag & Drop App</h1>
+   
+
+    <h2 id="addImageHeading">Add Image or Text</h2>
+    <div id="addImageAndText">
+        <div id="imageAdd">
+           <input id="imageInput" type="file" accept="image/*">
+           <button id="addImageButton">Add Image</button>
+        </div>
+        <div id="textAdd">
+           <input id="textInput" type="text" placeholder="type text here">
+           <button id="addTextButton">Add Text</button>
+        </div>
+    </div>
     
+    <div class="container">
+        <div id="maininsideContainer" class="mainDragDropBox"></div>
+        <div class="mainDragDropBox"></div>
+    </div>
+
+    <button id="reset">Reset</button>
 </body>
 </html>
+<script src="index.js"></script>
+
+
